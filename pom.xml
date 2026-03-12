@@ -5,21 +5,26 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.3</version>
+		<version>3.5.11</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kim.jay</groupId>
-	<artifactId>webclient-2022</artifactId>
+	<artifactId>scaling-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webclient-2022</name>
+	<name>scaling-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-rsocket</artifactId>
 		</dependency>
 
 		<dependency>
@@ -41,7 +46,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>jykwebclient2022</finalName>
+		<finalName>web-client</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
